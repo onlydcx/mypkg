@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='hanaoka',
-    maintainer_email='hanaoka@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='Rin Hanaoka',
+    maintainer_email='s23c1110vk@s.chibakoudai.jp',
+    description='a package for ROS2 practice',
+    license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
