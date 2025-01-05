@@ -2,7 +2,6 @@ from setuptools import find_packages, setup
 import os
 import glob
 
-
 package_name = 'mypkg'
 
 setup(
@@ -24,8 +23,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-            'listener = mypkg.listener:main',
+            # 'talker = mypkg.talker:main',
+            # 'listener = mypkg.listener:main',
+            'memory_node = mypkg.memory_publisher:main',
         ],
     },
 )

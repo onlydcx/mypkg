@@ -8,6 +8,17 @@ import psutil
 
 class MemoryPublisher(Node):
     def __init__(self):
+        super().__init__('memory_publisher')
+        self.pub = self.create_publisher(Float64, 'memory_usage', 10)
+        self.create_timer(1.0, self.publish_memory_usage)
 
     def publish_memory_usage(self):
+        memory_usage_value = psutil.virtual_memory().percent
+        msg = Float64()
+        msg.data = memory_usage_value
+        self.pub.publish(msg)
         
+def main():
+    rclpy.init()
+    node = MemoryPublisher()
+    rclpy.spin(node)
