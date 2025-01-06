@@ -7,6 +7,11 @@
 - ROS2のパッケージです。
 - マシンのメモリ使用量を取得し、トピックにパブリッシュします。
 
+# テスト環境
+
+- Ubuntu 24.04 LTS
+    - ROS2 jazzy 
+
 ## ノード
 
 - memory_node
@@ -30,7 +35,7 @@ $ ros2 run mypkg memory_node
 ```
 $ ros2 topic echo memory_usage
 ```
-
+出力例
 ```
 data: 41.4
 ---
@@ -42,11 +47,6 @@ data: 41.4
 ---
 data: 41.3
 ```
-
-# テスト環境
-
-- Ubuntu 24.04 LTS
-    - ROS2 jazzy 
 
 # ライセンス
 
