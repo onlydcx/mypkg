@@ -9,8 +9,10 @@
 
 # テスト環境
 
+- Ubuntu 22.04 LTS
+    - ROS2 Humble (Github Actions テスト環境)
 - Ubuntu 24.04 LTS
-    - ROS2 jazzy 
+    - ROS2 Jazzy (開発環境)
 
 ## ノード
 
@@ -20,7 +22,7 @@
 ## トピック
 
 - memory_usage
-    - メモリ使用率をFloat64型で1秒ごとに更新します。
+    - メモリ使用率をFloat64型(std_msgs/msg/Float64)で1秒ごとに更新します。
 
 ## 使用方法
 
