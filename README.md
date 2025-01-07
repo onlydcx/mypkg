@@ -16,7 +16,7 @@
 
 ## ノード
 
-- memory_node
+- memory_publisher
     - ROS2が動作しているマシンのメモリ使用率を取得し、```memory_usage```トピックにパブリッシュします。
 
 ## トピック
