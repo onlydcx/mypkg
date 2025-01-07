@@ -29,7 +29,7 @@
 以下のコマンドで実行します。
 
 ```
-$ ros2 run mypkg memory_node
+$ ros2 run mypkg memory_publisher
 ```
 
 トピックを表示するには以下のコマンドを実行してください。
