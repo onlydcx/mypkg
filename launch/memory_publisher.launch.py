@@ -10,6 +10,10 @@ def generate_launch_description():
     memory_publisher = launch_ros.actions.Node(
         package='mypkg',
         executable='memory_publisher',
+    ),
+    listener = launch_ros.actions.Node(
+        package='mypkg',
+        executable='listener',
+        output='screen'
     )
-
-    return launch.LaunchDescription([memory_publisher])
+    return launch.LaunchDescription([memory_publisher,listener])
