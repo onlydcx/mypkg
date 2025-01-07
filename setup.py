@@ -23,6 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'listener = mypkg.listener:main',
             'memory_publisher = mypkg.memory_publisher:main',
         ],
     },
