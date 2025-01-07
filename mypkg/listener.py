@@ -11,7 +11,7 @@ class MemoryListener(Node):
         self.create_subscription(Float64, "memory_usage", self.listener_callback, 10)
 
     def listener_callback(self,msg):
-        self.get_logger().info(f'Memory Usage"{msg.data}"%')
+        self.get_logger().info(f'Memory Usage {msg.data} %')
 
 def main():
     rclpy.init()
