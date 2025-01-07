@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'memory_node = mypkg.memory_publisher:main',
+            'memory_publisher = mypkg.memory_publisher:main',
         ],
     },
 )
